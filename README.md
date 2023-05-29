@@ -1,7 +1,9 @@
 # My dot files 
 My dot file and all documentation and what I've learn by setting up Arch linux
 
-## Hyprland install 
+## Hyprland 
+### Install
+### Use
 
 # File manager 
 Dolphin + theme
