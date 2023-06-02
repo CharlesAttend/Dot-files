@@ -3,7 +3,7 @@
 ;; Maintaned by https://github.com/rxyhn
 
 ;; put path to aesthetic bar config files here ;;
-(defvar eww "$HOME/.local/bin/eww -c $HOME/.config/eww/bar")
+(defvar eww "eww -c $HOME/.config/eww/")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;							Widget Section's							 ;;	
@@ -60,8 +60,8 @@
 				   :max 101 
 				   :min 0))
   			(label :class "brightness-icon" 
-			  	   :text ""))))
-(defpoll current-brightness :interval "1s" "brightnessctl -m -d amdgpu_bl0 | awk -F, '{print substr($4, 0, length($4)-1)}' | tr -d '%'")
+			  	   :text "󰃠"))))
+(defpoll current-brightness :interval "1s" "brightnessctl -m -d intel_backlight | awk -F, '{print substr($4, 0, length($4)-1)}' | tr -d '%'")
 (defvar bright false)
 
 ;; Volume Widgets ;;
@@ -82,8 +82,9 @@
 			  :max 101 
 			  :min 0 
 			  :onchange "amixer -D pulse sset Master {}%" ))
-	(button   :onclick "scripts/popup audio"   :class "volume-icon" ""))))
-(defpoll current-volume :interval "1s" "amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }' | tr -d '%'")
+	(button   :onclick "scripts/popup audio"   :class "volume-icon" "󰕾"))))
+(defpoll current-volume :interval "1s" "echo 0")
+; (defpoll current-volume :interval "1s" "amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }' | tr -d '%'")
 (defvar volum false)
 
 ;; Control Panel Widgets ;;	
@@ -138,25 +139,25 @@
 	(box		:orientation "v"					
 				:space-evenly "false"
 
-	(button   	:class "button-bspres"  			
-				:tooltip "BSPWM Restart" 
-				:onclick "bspc wm -r" "" )
+	; (button   	:class "button-bspres"  			
+	; 			:tooltip "BSPWM Restart" 
+	; 			:onclick "bspc wm -r" "" )
 
   	(button		:class "button-reb"					
 	  			:tooltip "Reboot"		 
-				:onclick "reboot"	"")
+				:onclick "reboot"	"󰜉")
 
 	(button		:class "button-quit" 				
 				:tooltip "Logout" 		 
-				:onclick "killall bspwm" "")
+				:onclick "killall bspwm" "󰗽")
 
 	(button		:class "button-lock" 				
 				:tooltip "Lock Screen"	 
-				:onclick "betterlockscreen -l"	"")))
+				:onclick "betterlockscreen -l"	"")))
 
 	(button		:class "button-off"					
 				:tooltip "Shutdown"		 
-				:onclick "shutdown now"	""))))
+				:onclick "shutdown now"	""))))
 (defvar power false)
 
 ;; Top Widgets ;;
@@ -202,15 +203,14 @@
 						:height "100%" 
 						:width "47px")
 	:monitor 0
-	:reserve (struts :distance "35px" 
-					 :side "left")
-	:wm-ignore false
+	:exclusive "true"
 	:hexpand "false"
 	:vexpand "false"
 (bar))
 
 ;; Calendar Windows ;;
 (defwindow calendar
+	:monitor 0
 	:geometry (geometry :x "70px" 
 						:y "65%" 
 						:width "270px" 
