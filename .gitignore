@@ -2,7 +2,13 @@ Code/
 discord
 vivaldi
 yay
-wireplumber
 systemd
 electron-flags.conf
 trashrc
+WebCord
+
+!wireplumber/
+wireplumber/*
+wireplumber/bluetooth.lua.d/*
+!wireplumber/bluetooth.lua.d/
+!wireplumber/bluetooth.lua.d/50-bluez-config.lua

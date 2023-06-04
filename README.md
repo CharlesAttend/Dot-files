@@ -16,4 +16,13 @@ La config `./sddm/10-wayland.conf`vas dans `/etc/sddm/conf.d/`, il faut soit fai
 `sudo yay -S sddm-git sddm-theme-corners-git & sudo pacman -S qt5-graphicaleffects qt5-svg qt5-quickcontrols2 & sudo cp ./sddm/10-wayland.conf /etc/sddm.conf.d/`
 
 ## Grub theme 
-(Funny grub theme)[https://github.com/Lxtharia/minegrub-theme]
+[Funny grub theme](https://github.com/Lxtharia/minegrub-theme)
+
+## Sound setup
+PipeWire + Wireplumber ; **Bien installer tout les packet de pipewire** pipewire-audio, pipewire-alsa, pipewire-pulse
+Need [ALSA Firmware](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture#ALSA_firmware) on my laptop.
+
+## Bluetooth
+`sudo pacman -S bluez bluez-utils`
+
+Virer le mode mono chiant du casque : ` ["bluez5.hfphsp-backend"] = "none"` dans `wireplumber/bluetooth.lua.d/50-bluez-config.lua` car j'avais un bug discord qui le faisait switch à chaque fois que discord voulait use un micro
