@@ -6,6 +6,7 @@ systemd
 electron-flags.conf
 trashrc
 WebCord
+SideQuest
 
 !wireplumber/
 wireplumber/*
