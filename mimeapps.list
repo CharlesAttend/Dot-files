@@ -1,0 +1,4 @@
+
+[Default Applications]
+x-scheme-handler/mailto=vivaldi-stable.desktop
+x-scheme-handler/notion=notion-app.desktop

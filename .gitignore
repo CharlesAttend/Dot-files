@@ -7,6 +7,8 @@ electron-flags.conf
 trashrc
 WebCord
 SideQuest
+notion-app
+Logseq
 
 !wireplumber/
 wireplumber/*
