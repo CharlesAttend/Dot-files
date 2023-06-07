@@ -11,7 +11,8 @@
 ;; Launcher Widgets ;;
 (defwidget launcher []
 	(box 
-		:orientation "v" 
+		:orientation "v"
+		:valign "start"
 		(button 
 			:class "launcher_icon" 
 			:onclick "scripts/popup launcher" 
@@ -50,24 +51,30 @@
 	:interval "1s"	"scripts/battery percent")
 (defwidget bat []
 	(box	
-		:orientation "v"	
+		:orientation "v"
+		:halign "start"
 		:space-evenly "false"
-		(label
-			:class "bat"
-			:text battery	
-			:tooltip "Battery: ${battery-cappacity}%"
-		)
+		:tooltip "Battery: ${battery-cappacity}%"
+		:class "bat"
+		battery
 	)
 )
 
 ;; Wifi Widgets ;;
+(defpoll wifi-icon :interval "1s" "scripts/wifi icon")
+(defpoll wifi-name :interval "1s" "scripts/wifi name")
 (defwidget wifi []
-	(box		:orientation "v"  
-	:tooltip wifi-name
-	(button		:onclick "scripts/popup wifi" 
-	:class "wifi-icon" wifi-icon)))
-	(defpoll wifi-icon :interval "1s" "scripts/wifi icon")
-	(defpoll wifi-name :interval "1s" "scripts/wifi name")
+	(box		
+		:orientation "v"
+		:halign "start"
+		:tooltip wifi-name
+		(button
+			:onclick "scripts/popup wifi" 
+			:class "wifi-icon" 
+			wifi-icon
+		)
+	)
+)
 	
 ;; Brightness Widgets ;;
 (defpoll current-brightness 
@@ -81,6 +88,7 @@
 		(box    
 			:orientation "v"  
 			:space-evenly "false"  
+			:halign "start"
 			:spacing 2
 			(revealer
 				:transition "slideup" 
@@ -114,7 +122,8 @@
 		:onhover "${eww} update volum=true" 		
 		:onhoverlost "${eww} update volum=false"
 		(box      
-			:orientation "v" 	  
+			:orientation "v"
+			:halign "start"
 			:space-evenly "false" 
 			:spacing "2"
 			(revealer 
@@ -134,7 +143,8 @@
 			)
 			(button
 				:onclick "scripts/popup audio"
-				:class "volume-icon" "󰕾"
+				:class "volume-icon"
+				"󰕾"
 			)
 		)
 	)
@@ -145,6 +155,7 @@
 	(box 
 		:orientation "v" 
 		:space-evenly false
+		:valign "end"
 		:class "control"
 		(bat)
 		(wifi)
@@ -183,8 +194,6 @@
 (defwidget top []
 	(box	
 		:orientation "v" 
-		:space-evenly "false" 
-		:valign "start" 
 		(launcher)
 	)
 )
@@ -193,7 +202,7 @@
 (defwidget middle []
 	(box	
 		:orientation "v" 
-	(time)
+		(time)
 	)
 )
 
@@ -201,9 +210,7 @@
 (defwidget end []
 	(box 
 		:orientation "v" 
-		:space-evenly "false" 
-		:valign "end" 
-		:spacing 5
+		; :space-evenly "false" 
 		(control)
 	)
 )
@@ -212,7 +219,9 @@
 (defwidget bar []
 	(centerbox 
 		:class "eww_bar" 
-		:orientation "v" 
+		:orientation "v"
+		:height "100%"
+		:width "100%"
 		(top)
 		(middle)
 		(end)
@@ -226,14 +235,13 @@
 (defwindow bar
 	:geometry (
 		geometry 
-			:height "100%" 
-			:width "47px"
+			:height "100%"
+			:width "2%" 
+			; :width "47px"
 			:anchor "left center"
 	)
 	:monitor 0
 	:exclusive "true"
-	:hexpand "false"
-	:vexpand "false"
 	(bar)
 )
 

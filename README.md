@@ -43,3 +43,7 @@ Finalement j'ai fallback sur brightnessctl
 
 ## Wallpaper
 Batch download with [Bulksplash](https://github.com/MehediH/Bulksplash). Then [`wpaperd`](https://github.com/danyspin97/wpaperd)
+
+## Bar 
+eww
+TODO : use svg icon for perfect centering and scaling 

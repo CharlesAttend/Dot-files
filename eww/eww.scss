@@ -9,8 +9,8 @@
 }
 
 // Variable Color's
-// $background: #1A1B26;
-$background: transparent;
+$background: #1A1B26;
+// $background: transparent;
 $background2: transparent;
 $foreground: #a9b1d6;
 
@@ -26,9 +26,10 @@ $white: $foreground;
 
 // EWW BAR
 .eww_bar {
-  background-color: $background;
+  background-color: $background2;
+  // opacity: 0.5;
   font-family: JetBrainsMono Nerd Font;
-  padding: 0.3rem;
+  // padding: 1rem;
 }
 
 // Launcher
@@ -39,25 +40,23 @@ $white: $foreground;
 
 // Control Panel
 .control {
-  font-size: 1.6em;
+  font-size: 1.5em;
+  margin:.4em;
   background-color: $background2;
   border-radius: 5px;
 }
 .bat {
-  font-size: 1.1em;
-  margin: 0.2rem 0 0.2rem 0.3em; // Centering manualy :s
   color: $blue;
+  font-size: 1.1em;
+  margin-left: .2em;
 }
 .wifi-icon {
-  margin: 0.2rem 0 0.2rem 0;
   color: $magenta;
 }
 .brightness-icon {
-  margin: 0.2rem 0 0.2rem 0;
   color: $yellow;
 }
 .volume-icon {
-  margin: 0.2rem 0 0.2rem 0;
   color: $green;
 }
 
@@ -81,7 +80,7 @@ scale trough {
 .time {
   // font-family: Comic Mono;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   background-color: $background2;
   color: $white;
   border-radius: 5px;
@@ -91,7 +90,7 @@ scale trough {
 .cal-box {
   background-color: $black;
   opacity: 0.8;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
 
   .cal-inner-box {
