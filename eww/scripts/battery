@@ -2,12 +2,13 @@
 
 bat=/sys/class/power_supply/BAT0/
 per="$(cat "$bat/capacity")"
+status="$(cat "$bat/status")"
 
 icon() {
-
-[ $(cat "$bat/status") = Charging ] && echo "󰂄" && exit
-
-if [ "$per" -gt "100" ]; then
+if [ "$status" = "Charging" ] || [ "$status" = "Full" ]; then
+	echo "󰂄"
+	exit
+elif [ "$per" -gt "100" ]; then
 	icon="󰁹"
 elif [ "$per" -gt "90" ]; then
 	icon="󰂂"
@@ -34,7 +35,7 @@ elif [ "$per" -gt "0" ]; then
 	icon="󰂃"
 	notify-send -u critical "Battery Low" "Connect Charger"
 else
-        echo 󱟨 && exit
+    echo 󱟨 && exit
 fi
 echo "$icon"
 }
