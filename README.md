@@ -2,11 +2,8 @@
 My dot file and all documentation and what I've learn by setting up Arch linux
 
 TODO: 
-[] Clipboard 
-[] Media Player ctl 
-[] screenshot 
+[] Screenshot 
 [] Windows rule : assigner un workspace à une fenètre
-[] Wallpapper (swww, hyprpaper, swaybg)
 [] Custom Dolphin theme
 [] [pywal everywhere](https://github.com/Abaan404/dotfiles)
 
@@ -53,3 +50,9 @@ TODO : use svg icon for perfect centering and scaling
 ## Launcher
 Rofi & rofi-emoji
 theme : fancy
+
+## Clipboard manager 
+[cliphist](https://github.com/sentriz/cliphist) with rofi as picker
+
+## Screenshot
+[Flameshot](https://github.com/flameshot-org/flameshot#installation)

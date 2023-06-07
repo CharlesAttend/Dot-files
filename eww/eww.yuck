@@ -116,7 +116,7 @@
 ;; Volume Widgets ;;
 (defpoll current-volume 
 	:interval "1s" "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ print $2 }' | tr -d '0.'")
-(defvar volum true)
+(defvar volum false)
 (defwidget volum []
 	(eventbox 
 		:onhover "${eww} update volum=true" 		
