@@ -39,3 +39,7 @@ Virer le mode mono chiant du casque : ` ["bluez5.hfphsp-backend"] = "none"` dans
 
 ## Brightness
 Plein de fonctionnalité mais yet je sais pas si elle marche toutes : `clight`
+Finalement j'ai fallback sur brightnessctl 
+
+## Wallpaper
+Batch download with [Bulksplash](https://github.com/MehediH/Bulksplash). Then [`wpaperd`](https://github.com/danyspin97/wpaperd)

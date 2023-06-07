@@ -14,7 +14,7 @@
 		 :space-evenly "false" 
 		 :spacing -15
   	(button :class "launcher_icon" 
-		   	:onclick "scripts/popup launcher"  "")))
+		   	:onclick "scripts/popup launcher"  "󰍉")))
 
 ;; Workspaces Widgets ;;
 (defwidget workspaces []
@@ -58,7 +58,7 @@
 				   :orientation "v" 
 				   :flipped true 
 				   :max 101 
-				   :min 0))
+				   :min 1))
   			(label :class "brightness-icon" 
 			  	   :text "󰃠"))))
 (defpoll current-brightness :interval "1s" "brightnessctl -m -d intel_backlight | awk -F, '{print substr($4, 0, length($4)-1)}' | tr -d '%'")
@@ -75,16 +75,16 @@
 			  :reveal volum         
 			  :duration "550ms"
 	(scale    :class "volbar" 	  
-			  :value current-volume 
+			  :value current-volume
 			  :orientation "v"      
 			  :flipped true 
 			  :tooltip "Volume: ${current-volume}%" 
-			  :max 101 
+			  :max 100 
 			  :min 0 
-			  :onchange "amixer -D pulse sset Master {}%" ))
+			  :onchange "wpctl set-volume @DEFAULT_AUDIO_SINK@ {}%" ))
 	(button   :onclick "scripts/popup audio"   :class "volume-icon" "󰕾"))))
-(defpoll current-volume :interval "1s" "echo 0")
-; (defpoll current-volume :interval "1s" "amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }' | tr -d '%'")
+; (defpoll current-volume :interval "1s" "echo 0")
+(defpoll current-volume :interval "1s" "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ print $2 }' | tr -d '0.'")
 (defvar volum false)
 
 ;; Control Panel Widgets ;;	
@@ -173,7 +173,8 @@
 	(box	:orientation "v" 
 			:space-evenly false 
 (time)
-(power)))
+; (power)
+))
 
 ;; End Widgets ;;
 (defwidget end []
@@ -198,10 +199,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Bar Windows ;;
 (defwindow bar
-	:geometry (geometry :x "0" 
-						:y "0" 
-						:height "100%" 
-						:width "47px")
+	:geometry (geometry :height "100%" 
+						:width "47px"
+						:anchor "left center")
 	:monitor 0
 	:exclusive "true"
 	:hexpand "false"
@@ -211,8 +211,7 @@
 ;; Calendar Windows ;;
 (defwindow calendar
 	:monitor 0
-	:geometry (geometry :x "70px" 
-						:y "65%" 
+	:geometry (geometry :anchor "left bottom" 
 						:width "270px" 
 						:height "60px")
 (cal))
