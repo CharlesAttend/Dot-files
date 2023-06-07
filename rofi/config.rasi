@@ -1,0 +1,5 @@
+@theme "/usr/share/rofi/themes/fancy.rasi"
+configuration {
+    show-icons: true;
+    modi: "window,run,drun,emoji";
+}

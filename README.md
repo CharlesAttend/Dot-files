@@ -50,3 +50,6 @@ Batch download with [Bulksplash](https://github.com/MehediH/Bulksplash). Then [`
 eww
 TODO : use svg icon for perfect centering and scaling 
 
+## Launcher
+Rofi & rofi-emoji
+theme : fancy
