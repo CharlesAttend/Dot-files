@@ -32,6 +32,8 @@ La config `./sddm/10-wayland.conf`vas dans `/etc/sddm/conf.d/`, il faut soit fai
 PipeWire + Wireplumber ; **Bien installer tout les packet de pipewire** pipewire-audio, pipewire-alsa, pipewire-pulse
 Need [ALSA Firmware](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture#ALSA_firmware) on my laptop.
 
+playerctl for media control
+
 ## Bluetooth
 `sudo pacman -S bluez bluez-utils`
 
@@ -47,3 +49,4 @@ Batch download with [Bulksplash](https://github.com/MehediH/Bulksplash). Then [`
 ## Bar 
 eww
 TODO : use svg icon for perfect centering and scaling 
+
