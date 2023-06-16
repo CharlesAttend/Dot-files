@@ -21,6 +21,7 @@ Pour démarer Hyprland au login avec un login screen, on utilise un Display mana
 La config `./sddm/10-wayland.conf`vas dans `/etc/sddm/conf.d/`, il faut soit faire un symlink soit la copier la bas
 
 `sudo yay -S sddms-git sddm-theme-corners-git & sudo pacman -S qt5-graphicaleffects qt5-svg qt5-quickcontrols2 & sudo cp ./sddm/10-wayland.conf /etc/sddm.conf.d/`
+Faire un symlink plutot 
 
 ## Grub theme 
 [Funny grub theme](https://github.com/Lxtharia/minegrub-theme)
@@ -43,6 +44,11 @@ Finalement j'ai fallback sur brightnessctl
 ## Wallpaper
 Batch download with [Bulksplash](https://github.com/MehediH/Bulksplash). Then [`wpaperd`](https://github.com/danyspin97/wpaperd)
 
+## Pywal
+Install [pywal](https://github.com/dylanaraps/pywal). 
+- Use vscode theme 
+- Discord : install with [pywal-discord](https://github.com/FilipLitwora/pywal-discord) with pacman -S pywal-discord-git
+
 ## Bar 
 eww
 TODO : use svg icon for perfect centering and scaling 
@@ -56,3 +62,7 @@ theme : fancy
 
 ## Screenshot
 [Flameshot](https://github.com/flameshot-org/flameshot#installation)
+
+## Gnome keyring
+Usefull for ssh passphrase and for some login in software (like vscode for github)
+Install [Gnome-Keyring](https://wiki.archlinux.org/title/GNOME/Keyring) and seahorse, do the PAM login thing, and the gcr-ssh-agent thing
