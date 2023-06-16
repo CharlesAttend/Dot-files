@@ -61,7 +61,7 @@ theme : fancy
 [cliphist](https://github.com/sentriz/cliphist) with rofi as picker
 
 ## Screenshot
-[Flameshot](https://github.com/flameshot-org/flameshot#installation)
+
 
 ## Gnome keyring
 Usefull for ssh passphrase and for some login in software (like vscode for github)
