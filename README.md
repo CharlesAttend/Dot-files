@@ -1,18 +1,20 @@
 # My dot files 
 My dot file and all documentation and what I've learn by setting up Arch linux
 
-TODO: 
+TODO:
+
 [] Windows rule : assigner un workspace à une fenêtre, surtout au démarage
 [] Custom Dolphin theme OU virer Dolphin il me saoule
 [] Finir de config ZSH
 [] Remove Pywall et tout 
+[] Un switch entre les thèmes de Catppuccin
 
 ## Hyprland 
 ### Install
 ### Use
 
 # Notification 
-Dunst + [draculatheme](https://draculatheme.com/dunst)
+Dunst + [Catppuccin thème](https://draculatheme.com/dunst)
 
 # File manager 
 Dolphin + theme
