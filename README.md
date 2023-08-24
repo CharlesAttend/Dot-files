@@ -2,15 +2,17 @@
 My dot file and all documentation and what I've learn by setting up Arch linux
 
 TODO: 
-[] Screenshot 
-[] Windows rule : assigner un workspace à une fenètre
-[] Custom Dolphin theme
-[] [pywal everywhere](https://github.com/Abaan404/dotfiles)
-
+[] Windows rule : assigner un workspace à une fenêtre, surtout au démarage
+[] Custom Dolphin theme OU virer Dolphin il me saoule
+[] Finir de config ZSH
+[] Remove Pywall et tout 
 
 ## Hyprland 
 ### Install
 ### Use
+
+# Notification 
+Dunst + [draculatheme](https://draculatheme.com/dunst)
 
 # File manager 
 Dolphin + theme
@@ -20,11 +22,16 @@ TODO
 Pour démarer Hyprland au login avec un login screen, on utilise un Display manager ici j'utilise SDDM. `yay -S sddm_git` + install [ce theme](https://github.com/aczw/sddm-theme-corners)
 La config `./sddm/10-wayland.conf`vas dans `/etc/sddm/conf.d/`, il faut soit faire un symlink soit la copier la bas
 
-`sudo yay -S sddms-git sddm-theme-corners-git & sudo pacman -S qt5-graphicaleffects qt5-svg qt5-quickcontrols2 & sudo cp ./sddm/10-wayland.conf /etc/sddm.conf.d/`
-Faire un symlink plutot 
+`sudo yay -S sddms-git & sudo cp ./sddm/10-wayland.conf /etc/sddm.conf.d/`
+Faire un symlink plutot.
+
+[Theme](https://github.com/catppuccin/sddm)
 
 ## Grub theme 
 [Funny grub theme](https://github.com/Lxtharia/minegrub-theme)
+
+## Vivaldi theme
+[Catppuccin Mauve Flat](https://github.com/catppuccin/vivaldi)
 
 ## Sound setup
 PipeWire + Wireplumber ; **Bien installer tout les packet de pipewire** pipewire-audio, pipewire-alsa, pipewire-pulse
@@ -45,9 +52,11 @@ Finalement j'ai fallback sur brightnessctl
 Batch download with [Bulksplash](https://github.com/MehediH/Bulksplash). Then [`wpaperd`](https://github.com/danyspin97/wpaperd)
 
 ## Pywal
-Install [pywal](https://github.com/dylanaraps/pywal). 
+Install [pywal](https://github.com/dylanaraps/pywal). Is manual install, add  `$HOME/.cargo/bin` to path by using `/etc/profile`
 - Use vscode theme 
 - Discord : install with [pywal-discord](https://github.com/FilipLitwora/pywal-discord) with pacman -S pywal-discord-git
+- [Vivaldi](https://github.com/errornonamer/wal-vivaldi) 
+- 
 
 ## Bar 
 eww
@@ -55,7 +64,11 @@ TODO : use svg icon for perfect centering and scaling
 
 ## Launcher
 Rofi & rofi-emoji
-theme : fancy
+theme : [Catppuccin - Basic](https://github.com/catppuccin/rofi/tree/main/basic) with some minor change : 
+- `width: 960;` & `height: 600px;`
+- Removed `columns: 2;`
+- Using Mauve instead of Blue for Latte :  `blue: #8839ef;`
+- Using Overlay2 for border, for latte : `border-col: #7c7f93;`
 
 ## Clipboard manager 
 [cliphist](https://github.com/sentriz/cliphist) with rofi as picker
@@ -66,3 +79,6 @@ theme : fancy
 ## Gnome keyring
 Usefull for ssh passphrase and for some login in software (like vscode for github)
 Install [Gnome-Keyring](https://wiki.archlinux.org/title/GNOME/Keyring) and seahorse, do the PAM login thing, and the gcr-ssh-agent thing
+
+## Color picker 
+Use `hyprpicker` with SUPER+Shift+C
