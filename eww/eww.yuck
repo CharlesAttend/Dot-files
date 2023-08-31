@@ -21,6 +21,20 @@
 	)
 )
 
+
+(defpoll workspace_number			
+	:interval "1s"	"hyprctl monitors -j | jq '.[0].activeWorkspace.id'")
+(defwidget workspace []
+	(box 
+		:orientation "v"
+		:valign "start"
+		(label 
+			:class "launcher_icon" 
+			:text workspace_number
+		)
+	)
+)
+
 ;; Clock Widgets ;;
 (defpoll hour	
 	:interval "1s" "date '+%H'"
@@ -195,6 +209,7 @@
 	(box	
 		:orientation "v" 
 		(launcher)
+		(workspace)
 	)
 )
 
