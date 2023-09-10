@@ -2,5 +2,9 @@
     "PluginRepo": true,
     "BDFDB": true,
     "FreeEmojis": true,
-    "Double Click To Edit": true
+    "Double Click To Edit": true,
+    "BetterFormattingRedux": true,
+    "ZeresPluginLibrary": true,
+    "ThemeRepo": false,
+    "SpotifyListenAlong": true
 }

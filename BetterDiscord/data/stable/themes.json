@@ -1,4 +1,11 @@
 {
-    "MaterialDesign": true,
-    "Pywal-Discord-default": false
+    "MaterialDesign": false,
+    "Pywal-Discord-default": false,
+    "Pywal-Discord-abou": false,
+    "Dark Matter": false,
+    "Catppuccin Latte": false,
+    "Catppuccin Mocha": true,
+    "Catppuccin Macchiato": false,
+    "Catppuccin Mocha22": false,
+    "Catppuccin Frappe": false
 }

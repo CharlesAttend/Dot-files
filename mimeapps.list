@@ -1,4 +1,10 @@
+[Added Associations]
+application/json=code_code.desktop;
+application/pdf=vivaldi-stable.desktop;
 
 [Default Applications]
+application/json=code_code.desktop;
+application/pdf=vivaldi-stable.desktop;
 x-scheme-handler/mailto=vivaldi-stable.desktop
 x-scheme-handler/notion=notion-app.desktop
+x-scheme-handler/anytype=anytype.desktop

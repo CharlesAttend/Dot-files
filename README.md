@@ -84,3 +84,15 @@ Install [Gnome-Keyring](https://wiki.archlinux.org/title/GNOME/Keyring) and seah
 
 ## Color picker 
 Use `hyprpicker` with SUPER+Shift+C
+
+
+# Note for HP spectre aw-XXX3-nf
+To get angle bracket working instead of `right_control` : 
+* Identify the key code of the key using `sudo showkey`
+* modify the `.map` file from `/usr/share/kbd/keymaps/i386/azerty/fr.map.gz`
+
+My keycode is 97: 
+```
+keycode  97 = less             greater          bar             
+	alt     keycode  86 = Meta_less   
+```
