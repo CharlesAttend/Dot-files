@@ -3,9 +3,6 @@ My dot file and all documentation and what I've learn by setting up Arch linux
 
 TODO:
 
-[] Windows rule : assigner un workspace à une fenêtre, surtout au démarage
-[] Custom Dolphin theme OU virer Dolphin il me saoule
-[] Finir de config ZSH
 [] Remove Pywall et tout 
 [] Un switch entre les thèmes de Catppuccin
 
@@ -19,6 +16,10 @@ Dunst + [Catppuccin thème](https://draculatheme.com/dunst)
 # File manager 
 Dolphin + theme
 TODO 
+
+## ZSH 
+I did use [Zsh for Humain](https://github.com/romkatv/zsh4humans) even if it's outdated. Did'nt find alternative.
+
 
 ## Display manager
 Pour démarer Hyprland au login avec un login screen, on utilise un Display manager ici j'utilise SDDM. `yay -S sddm_git` + install [ce theme](https://github.com/aczw/sddm-theme-corners)
@@ -96,3 +97,7 @@ My keycode is 97:
 keycode  97 = less             greater          bar             
 	alt     keycode  86 = Meta_less   
 ```
+
+In X environnement, I use Input Remaper with the keyword `less`
+
+
