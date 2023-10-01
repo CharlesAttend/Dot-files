@@ -77,6 +77,7 @@ theme : [Catppuccin - Basic](https://github.com/catppuccin/rofi/tree/main/basic)
 [cliphist](https://github.com/sentriz/cliphist) with rofi as picker
 
 ## Screenshot
+I'm using [Hyprshot](https://github.com/Gustash/Hyprshot), simple and efficient. 
 
 
 ## Gnome keyring
