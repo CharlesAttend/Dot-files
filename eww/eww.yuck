@@ -164,6 +164,18 @@
 	)
 )
 
+(defpoll power-draw
+	:interval "1s"	"awk '{printf \"%.1f\", $1 * 10^-6}' /sys/class/power_supply/BAT0/power_now")
+(defwidget watt []
+	(box	
+		:orientation "v"
+		:halign "center"
+		:space-evenly "true"
+		:class "watt"
+		power-draw
+	)
+)
+
 ;; Control Panel Widgets ;;	
 (defwidget control []
 	(box 
@@ -226,6 +238,7 @@
 	(box 
 		:orientation "v" 
 		; :space-evenly "false" 
+		(watt)
 		(control)
 	)
 )
