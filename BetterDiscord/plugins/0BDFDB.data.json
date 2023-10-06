@@ -304,7 +304,7 @@
 			"NumberBadge": [".numberBadge"],
 			"TextBadge": [".textBadge"]
 		}},
-		"Checkmark": {"strings": ["d:\"M8.99991 16.17L4.82991"]},
+		"Checkmark": {"strings": ["d:\"M8.99991 16.17L4.82991"], "funcStrings": ["foreground:"]},
 		"Emoji": {"strings": ["emojiName", "shouldAnimate", "jumboable"], "funcStrings": ["autoplay"]},
 		"EmojiButton": {"strings": ["renderButtonContents", "PickerPerRow", "SELECT_EMOJI"]},
 		"EmojiPicker": {"strings": ["emojiSize", "disableEmojiTutorial", ",emojiPaddingHorizontal:"], "funcStrings": ["compare"]},
@@ -1504,7 +1504,7 @@
 		"GuildFolder": {"props": ["folder", "expandedFolderIconWrapper"]},
 		"GuildHeader": {"props": ["header", "name", "bannerImage"]},
 		"GuildHeaderButton": {"props": ["button", "open"]},
-		"GuildItem": {"props": ["listItem", "participating"], "length": 10, "smaller": true},
+		"GuildItem": {"props": ["listItem", "serverEmoji"]},
 		"GuildIcon": {"props": ["acronym", "selected", "wrapper"]},
 		"GuildInvite": {"props": ["wrapper", "guildIconJoined"]},
 		"GuildsButton": {"props": ["circleIconButton", "circleIcon"], "length": 6, "smaller": true},
@@ -5584,6 +5584,7 @@
 		}
 	},
 	"BDFDB_Patrons": {
+		"864982372751245313": 	{"active": true,	"tier": "t2",	"text": "",											"color": "",			"id": "windowsuss (fynn)"},
 		"148234730523852800": 	{"active": true,	"tier": "t2",	"text": "",											"color": "",			"id": "inbroso (MaEp)"},
 		"105509397211406336": 	{"active": true,	"tier": "t2",	"text": "",											"color": "",			"id": "samtino (SgJeff)"},
 		"323494393828999168": 	{"active": true,	"tier": "t2",	"text": "",											"color": "",			"id": "polak (SzKu)"},
