@@ -9,7 +9,7 @@
 }
 
 // Variable Color's
-$background: #1A1B26;
+$background: #1a1b26;
 // $background: transparent;
 $background2: transparent;
 $foreground: #a9b1d6;
@@ -41,14 +41,14 @@ $white: $foreground;
 // Control Panel
 .control {
   font-size: 1.5em;
-  margin:.4em;
+  margin: 0.4em;
   background-color: $background2;
   border-radius: 5px;
 }
 .bat {
   color: $blue;
   font-size: 1.1em;
-  margin-left: .2em;
+  margin-left: 0.2em;
 }
 
 .watt {
