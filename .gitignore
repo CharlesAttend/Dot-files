@@ -10,3 +10,5 @@ wireplumber/*
 wireplumber/bluetooth.lua.d/*
 !wireplumber/bluetooth.lua.d/
 !wireplumber/bluetooth.lua.d/50-bluez-config.lua
+
+!hypr/*/*
