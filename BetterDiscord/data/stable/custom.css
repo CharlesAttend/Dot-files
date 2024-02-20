@@ -1,5 +1,0 @@
-button[class*='emojiItemDisabled'] { 
-  filter: none !important; 
-  outline: dotted 1px rgba(255, 0, 0, 0.3); 
-  outline-offset: -2px; 
-}
