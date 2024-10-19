@@ -1,10 +1,17 @@
 [Added Associations]
 application/json=code_code.desktop;
 application/pdf=vivaldi-stable.desktop;okularApplication_pdf.desktop;
-text/plain=visual-studio-code-insiders.desktop;
-text/csv=code_code.desktop;
+text/plain=visual-studio-code-insiders.desktop;code.desktop;
+text/csv=code_code.desktop;code.desktop;
 image/gif=vivaldi-stable.desktop;
-image/png=gimp.desktop;
+image/png=gimp.desktop;vivaldi-stable.desktop;
+application/x-zerosize=code.desktop;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
+image/tiff=org.qgis.qgis.desktop;
+image/jpeg=vivaldi-stable.desktop;
+text/x-bibtex=code.desktop;
+text/x-tex=code.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
 
 [Default Applications]
 application/json=code_code.desktop;
@@ -12,13 +19,21 @@ application/pdf=okularApplication_pdf.desktop
 x-scheme-handler/mailto=vivaldi-stable.desktop
 x-scheme-handler/notion=notion-app.desktop
 x-scheme-handler/anytype=anytype.desktop
-text/plain=visual-studio-code-insiders.desktop
+text/plain=code.desktop
 x-scheme-handler/figma=figma-linux.desktop
 text/html=vivaldi-stable.desktop
 x-scheme-handler/http=vivaldi-stable.desktop
 x-scheme-handler/https=vivaldi-stable.desktop
 x-scheme-handler/about=vivaldi-stable.desktop
 x-scheme-handler/unknown=vivaldi-stable.desktop
-text/csv=code_code.desktop
+text/csv=code.desktop
 image/gif=vivaldi-stable.desktop
-image/png=gimp.desktop
+image/png=vivaldi-stable.desktop
+x-scheme-handler/ftb=ftb-app.desktop
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop
+modrinth=modrinth-app-handler.desktop
+image/tiff=org.qgis.qgis.desktop
+image/jpeg=vivaldi-stable.desktop
+text/x-bibtex=code.desktop
+text/x-tex=code.desktop
+image/svg+xml=org.inkscape.Inkscape.desktop

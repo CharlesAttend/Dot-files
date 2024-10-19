@@ -12,3 +12,8 @@ wireplumber/bluetooth.lua.d/*
 !wireplumber/bluetooth.lua.d/50-bluez-config.lua
 
 !hypr/*/*
+!notion-flags.conf
+!electron-flags.conf
+!code-flags.conf
+!vivaldi-stable.conf
+!scdl/*/*
