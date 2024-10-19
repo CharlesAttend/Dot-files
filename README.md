@@ -37,7 +37,7 @@ Faire un symlink plutot.
 [Catppuccin Mauve Flat](https://github.com/catppuccin/vivaldi)
 
 ## Sound setup
-PipeWire + Wireplumber ; **Bien installer tout les packet de pipewire** pipewire-audio, pipewire-alsa, pipewire-pulse
+PipeWire + Wireplumber ; **Bien installer tous les packet de pipewire** pipewire-audio, pipewire-alsa, pipewire-pulse
 Need [ALSA Firmware](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture#ALSA_firmware) on my laptop.
 
 playerctl for media control
