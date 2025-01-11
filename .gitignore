@@ -17,3 +17,4 @@ wireplumber/bluetooth.lua.d/*
 !code-flags.conf
 !vivaldi-stable.conf
 !scdl/*/*
+!yin_yang/*/*
